@@ -1,0 +1,650 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: ease 0.2s;
+  /* outline: 1px solid green; */
+}
+
+h1 {
+  font-family: poppins;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: poppins;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: poppins;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: poppins;
+  font-weight: 500;
+}
+
+p {
+  font-family: poppins;
+}
+
+a {
+  font-family: poppins;
+}
+
+body {
+  /* overflow-x: hidden !important; */
+  /* background-color: red; */
+  width: 100%;
+}
+
+.textDark {
+  color: black;
+}
+
+.textLight {
+  color: white;
+}
+
+.bgDark {
+  background-color: black;
+}
+
+.bgLight {
+  background-color: white;
+}
+
+header {
+  background-color: rgb(11, 11, 11);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+header nav h1 {
+  color: goldenrod;
+  cursor: pointer;
+}
+
+header nav h1:hover {
+  color: gold;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header nav ul li a:hover {
+  color: rgb(228, 228, 228);
+  border-bottom: 2px solid goldenrod;
+  transition: ease-in;
+}
+
+.nav-menu {
+  position: relative;
+  top: 0.75rem;
+  right: 1rem;
+  width: 30px;
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-menu .bar {
+  background-color: goldenrod;
+  width: 30px;
+  height: 3px;
+}
+
+/* mobile nav styling */
+
+.mobile-nav {
+  display: none;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  padding: 20px;
+  margin: 0;
+}
+
+#home {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../media/background.jpg);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+#home div {
+  color: white;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+#home div h2 {
+  color: goldenrod;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#home div h2:hover {
+  color: gold;
+}
+
+#home div p {
+  margin-bottom: 20px;
+  font-weight: 200;
+  font-size: 10px;
+  color: white;
+}
+
+#home div a {
+  text-decoration: none;
+  color: #000000;
+  background-color: goldenrod;
+  padding: 8px 40px;
+  font-weight: 500;
+}
+
+#home div a:hover {
+  text-decoration: none;
+  background-color: white;
+  color: #000000;
+  padding: 8px 40px;
+  font-weight: 500;
+}
+
+/* services */
+
+#services {
+  background-color: black;
+}
+
+#services .services {
+  background-color: rgb(11, 11, 11);
+}
+
+#services .services .ourServices {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#services .services .ourServices h2 {
+  font-size: 30px;
+  color: goldenrod;
+  cursor: default;
+}
+
+#services .services .ourServices h2:hover {
+  color: gold;
+}
+
+#services .services .ourServices p {
+  color: white;
+  font-weight: 200;
+}
+
+#services .container {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding: 30px 0;
+}
+
+.serviceInfo {
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
+.item {
+  background-color: rgb(11, 11, 11);
+  width: 29%;
+  padding-bottom: 3rem;
+  margin: 1rem 0;
+}
+
+#services .serviceInfo h3 {
+  margin: 2rem 0;
+  cursor: default;
+  color: goldenrod;
+}
+
+#services .serviceInfo h3:hover {
+  color: gold;
+}
+
+#services .serviceInfo p {
+  margin-bottom: 3rem;
+  color: white;
+  cursor: pointer;
+}
+
+#services .serviceInfo a {
+  margin-bottom: 5rem;
+  color: #000000;
+  background-color: goldenrod;
+  padding: 10px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#services .serviceInfo a:hover {
+  color: #000000;
+  background-color: white;
+}
+
+/* Listings */
+
+#listings {
+  background-color: black;
+  padding-bottom: 30px;
+}
+
+#listings .ourListings {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(11, 11, 11);
+}
+
+#listings .ourListings h2 {
+  color: rgb(218, 165, 32);
+  margin: 60px;
+  cursor: default;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+#listings .ourListings h2:hover {
+  color: gold;
+}
+
+/* Listings Container */
+
+#listings .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px;
+  margin: 1rem 0;
+}
+
+#listings .container .property img {
+  width: 100%;
+  height: auto;
+}
+
+#listings .container .property .house5 {
+  width: 100%;
+  height: 45%;
+}
+
+#listings .container .property img {
+  width: 100%;
+  height: auto;
+}
+
+#listings .container .property {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 3rem;
+  background-color: rgb(11, 11, 11);
+  color: white;
+  padding-bottom: 3rem;
+}
+
+#listings .container .property:hover {
+  transform: translateY(-0.5%);
+  /* border-left: 1px solid goldenrod; */
+  border-bottom: 3px solid goldenrod;
+}
+
+#listings .container .property span {
+  font-weight: 700;
+}
+
+#listings .container .property a {
+  color: #000000;
+  background-color: goldenrod;
+  padding: 10px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#listings .container .property a:hover {
+  background-color: white;
+}
+
+#listings .container .property h3,
+h4,
+p,
+img,
+a {
+  margin-bottom: 2rem;
+}
+
+#listings .viewAllListings {
+  display: flex;
+  justify-content: center;
+  margin-top: -2rem;
+}
+
+#listings .viewAllListings a {
+  color: #000000;
+  background-color: goldenrod;
+  padding: 10px 3rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#listings .viewAllListings a:hover {
+  background-color: white;
+}
+
+/* Ready To Buy */
+
+#readyToBuy .readyInfo {
+  background-color: black;
+  padding: 30px;
+}
+
+#readyToBuy .readyInfo2 h2 {
+  background-color: rgb(11, 11, 11);
+  color: goldenrod;
+  cursor: default;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 400;
+  padding: 50px;
+}
+
+#readyToBuy .readyInfo2 h2:hover {
+  color: gold;
+}
+
+#readyToBuy .readyInfo h2 {
+  background-color: rgb(11, 11, 11);
+  color: goldenrod;
+  cursor: default;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  padding: 50px;
+}
+
+#readyToBuy .readyInfo h2:hover {
+  color: gold;
+}
+
+#readyToBuy .readyInfo p {
+  color: white;
+  text-align: center;
+}
+
+#readyToBuy .readyInfo a {
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  background-color: goldenrod;
+  padding: 10px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#readyToBuy .readyInfo a:hover {
+  background-color: white;
+}
+
+#readyToBuy .readyInfo .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+#readyToBuy .readyInfo .container .expertBox {
+  padding: 30px;
+  margin: 1rem;
+}
+
+#makeDeal h3 {
+  cursor: default;
+  background-color: black;
+  color: rgb(12, 12, 12);
+  text-align: center;
+  padding: 10px 30px;
+  font-size: 9rem;
+  font-weight: 700;
+  margin-top: -2rem;
+  /* line-height: 23rem; */
+}
+
+#contact {
+  background-color: black;
+  padding: 30px;
+}
+
+#contact h2 {
+  text-align: center;
+  color: goldenrod;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  cursor: default;
+}
+
+#contact h2:hover {
+  color: gold;
+}
+
+#contact .form {
+  margin: 1rem;
+  background-color: rgb(11, 11, 11);
+  padding: 30px;
+}
+
+/*  */
+/*  */
+
+.form-input {
+  margin-top: 30px;
+  padding: 0;
+
+  /* padding: 5px; */
+}
+
+.form-input input {
+  margin-top: 18px;
+  padding: 6.8px;
+  width: 100%;
+  height: 8vh;
+  border: 1px solid rgba(128, 128, 128, 0.452);
+  font-size: 15.2px;
+}
+
+.form-input button {
+  margin-top: 18px;
+  padding: 14px;
+  font-size: 15px;
+  background: goldenrod;
+  color: black;
+  border: none;
+}
+
+.form-input button span {
+  font-size: 20px;
+}
+
+.form-input button:hover {
+  background: white;
+  color: black;
+}
+
+@media all and (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  #home div {
+    color: white;
+    text-align: left;
+    /* margin-left: 10px; */
+  }
+
+  #home div h2 {
+    font-size: 28px;
+  }
+
+  #home div p {
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-size: 9px;
+    color: white;
+  }
+
+  #home div a {
+    text-decoration: none;
+    color: #000000;
+    background-color: goldenrod;
+    font-size: small;
+    padding: 8px 40px;
+  }
+
+  #services .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #services .container .item {
+    width: 70%;
+  }
+
+  #listings .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #listings .container .property {
+    width: 75%;
+  }
+
+  #readyToBuy .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media all and (min-width: 600px) and (max-width: 800px) {
+  #services .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #services .container .item {
+    width: 50%;
+  }
+
+  #listings .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.8rem 0;
+  }
+
+  #listings .container .property {
+    width: 46%;
+    margin-bottom: 1.9rem;
+  }
+
+  #readyToBuy .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media all and (min-width: 800px) and (max-width: 1080px) {
+  #services .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #services .container .item {
+    width: 50%;
+  }
+
+  #listings .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.8rem 0;
+  }
+
+  #listings .container .property {
+    width: 45%;
+    margin-bottom: 1.9rem;
+  }
+
+  #readyToBuy .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
